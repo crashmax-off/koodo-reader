@@ -179,7 +179,7 @@ class SettingDialog extends React.Component<
             </span>
           </div>
           <div className="setting-dialog-new-title">
-            <Trans>Dont't use mimical background</Trans>
+            <Trans>Don't use mimical background</Trans>
             <span
               className="single-control-switch"
               onClick={() => {
@@ -207,11 +207,15 @@ class SettingDialog extends React.Component<
                   className="icon-simplified"
                   onClick={() => this.changeLanguage("zh")}
                 ></span>
-              ) : (
+              ) : this.state.language === "ru" ? (
                 <span
                   className="icon-traditional"
                   onClick={() => this.changeLanguage("cht")}
                 ></span>
+              ) : (
+                <span
+                  onClick={() => this.changeLanguage("ru")}
+                >RU</span>
               )}
             </div>
           </div>
