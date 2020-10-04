@@ -86,7 +86,7 @@ class BookListItem extends React.Component<BookItemProps, BookItemState> {
           {this.props.book.author ? (
             this.props.book.author
           ) : (
-            <Trans>Unknown Authur</Trans>
+            <Trans>Unknown Author</Trans>
           )}
         </p>
         <p className="book-item-list-percentage">

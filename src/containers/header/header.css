@@ -14,7 +14,7 @@
 .header-sort-text,
 .download-demo-book {
   float: left;
-  width: 32px;
+  width: inherit;
   height: 16px;
   font-size: 16px;
   line-height: 27px;

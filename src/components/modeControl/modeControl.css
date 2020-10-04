@@ -1,6 +1,7 @@
 .single-control-container {
   width: calc(100% - 40px);
-  height: 80px;
+  height: inherit;
+  max-height: 110px;
   margin: 0px 20px 0px 20px;
   display: flex;
   justify-content: space-between;

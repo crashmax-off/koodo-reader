@@ -2,7 +2,7 @@
 import React from "react";
 import "./searchBox.css";
 import OtherUtil from "../../utils/otherUtil";
-import { Trans } from "react-i18next";
+// import { Trans } from "react-i18next";
 import { SearchBoxProps } from "./interface";
 class SearchBox extends React.Component<SearchBoxProps> {
   componentDidMount() {
@@ -120,7 +120,7 @@ class SearchBox extends React.Component<SearchBoxProps> {
             }}
             style={this.props.mode === "nav" ? { right: "-9px" } : {}}
           >
-            <Trans>Cancel</Trans>
+            <span className="icon-close setting-close"></span>
           </span>
         ) : (
           <span
